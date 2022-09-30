@@ -1,4 +1,59 @@
 body {
     margin: 0;
     box-sizing: border-box;
+    background-color: #1f2937;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+
+}
+
+.brand-color{
+  display: block;
+  color: #4ADf86;
+}
+#container{
+  width: 400px;
+  margin: 100px auto  auto;
+}
+
+/* Typography */
+h1{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: -2.5%;
+}
+p{
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: -2.5%;
+  color: #d5d4d8;
+}
+
+button{
+  background-color: #10B981;
+  padding: 15px;
+  margin-top: 60px;
+  border: 0px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 500;
+
+
+}
+.password-section{
+  margin-top: 30px;
+  width: 400px;
+
+}
+.password-section span{
+  display: inline-block;
+  width: 160px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  background-color: #273549;
+  font-weight: 500;
 }

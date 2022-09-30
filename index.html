@@ -1,27 +1,32 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
       <!-- Generate Password Section  -->
-        <h1>Generate a <span class="">random password</span></h1>
+      <div id="container">
+        <h1>Generate a <span class="brand-color">random password</span></h1>
         <p>Never use an insecure password again</p>
         <button 
           id="generate-btn" >
-            Generate Password
+            Generate password
         </button>
 
         <!-- Password Display Section -->
-        <div class="passWord-section"> 
-          <span id="first-password-el"></span>
+        <section class="password-section brand-color"> 
+          <span id="first-password-el" ></span>
           <span id="second-password-el"></span>
-        </div>
+        </section>
 
 
         <!-- Clear Password Section -->
-        <button id="clear-btn">
-          Clear Passwords
+        <button id="clear-btn" >
+          Clear passwords
         </button>
         <script src="index.js"></script>
+      </div>
     </body>
 </html>
