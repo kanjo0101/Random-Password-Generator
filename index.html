@@ -3,24 +3,25 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+      <!-- Generate Password Section  -->
         <h1>Generate a <span class="">random password</span></h1>
         <p>Never use an insecure password again</p>
         <button 
-          id="btn" 
-          onclick="passWordGenerator()">
+          id="generate-btn" >
             Generate Password
         </button>
 
+        <!-- Password Display Section -->
         <div class="passWord-section"> 
           <span id="first-password-el"></span>
           <span id="second-password-el"></span>
         </div>
 
-        <button 
-          id="delete-el" 
-          onclick="deletePasswords()">
-           Clear Passwords
-          </button>
+
+        <!-- Clear Password Section -->
+        <button id="clear-btn">
+          Clear Passwords
+        </button>
         <script src="index.js"></script>
     </body>
 </html>

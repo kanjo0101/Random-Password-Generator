@@ -3,7 +3,12 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let firstPassWordEl = document.getElementById("first-password-el")
 let secondPassWordEl = document.getElementById("second-password-el")
+let generateBtn = document.getElementById("generate-btn")
+const clearBtn = document.getElementById("clear-btn")
+console.log(clearBtn)
 
+
+// First Password
 function firstPassword(){
 for( i = 0; i < 16; i++){
   let indexNumber = Math.floor(Math.random() * characters.length)
@@ -12,7 +17,7 @@ for( i = 0; i < 16; i++){
 
 }
 }
-// firstPassword()
+// secondPassword()
 
 function secondPassword(){
   for( i = 0; i < 16; i++){
@@ -23,16 +28,18 @@ function secondPassword(){
   }
 
 }
-// secondPassword()
+// passWord Generator()
 function passWordGenerator(){
   firstPassword()
   secondPassword()
 }
 
-function deletePasswords(){
+function clearPasswords(){
   firstPassWordEl.textContent = ""
   secondPassWordEl.textContent = ""
 }
 
+generateBtn.addEventListener("click", passWordGenerator)
+clearBtn.addEventListener("click", clearPasswords)
 
 
